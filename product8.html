@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIKO</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#">Watches</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="#row">Products</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        types of watches
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#n1">leather watch</a></li>
+                      <li><a class="dropdown-item" href="#n2">metal watch</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#n3">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+      <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+                <figure class="figure m-2 ">
+                    <img src="image/pexels-yury-kim-580707.jpg" class="figure-img img-fluid rounded w-100 co" alt="...">
+                   
+                  </figure>
+            </div>
+           
+
+            <div class="col-6 my-5">
+                <h3>SEIKO (metal watch)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nulla quibusdam numquam recusandae a tempore placeat, aperiam, consequatur sit dolore debitis fuga molestiae. Facilis fugiat possimus odio quasi dolores praesentium repellat quos veritatis impedit magni tempora id doloribus saepe doloremque quis rem blanditiis laboriosam excepturi, ea veniam odit libero ipsum. Repudiandae aliquid recusandae eius itaque blanditiis quidem quibusdam adipisci sapiente. Architecto numquam tenetur, itaque enim explicabo harum reiciendis sapiente nisi sint suscipit alias..</p>
+                <h5 class="ha1">Price : <h5 class="ha2">3100 EGP</h5> </h5>
+                <h5 class="qnt">Quantity</h5>
+                <button id="but1" class="b1">-</button>
+                <input   class="input" id ="text" type="text" value="1">
+                <button id="but2" class="b2">+</button>
+                
+                    <h5 id="totalcost">TotalCost </h5>
+                    <input type="text" id="inputcos" class="total" value="2400">
+               
+             <a href="#"><button class="b3"id="but3">Add To Cart</button></a> 
+            </div>  
+        </div>
+      </div>
+       
+      <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>DOWNLOAD SHOPPING FREE APP</h3>
+                    <p>Get access to exclusive offers!</p>
+                    <div class="app-logo">
+                        <img src="image/app-store.png">
+                        <img src="image/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    
+                    <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="jquery-3.6.0.min.js"></script>
+    <script>
+             $('.b2').click(function(){
+                let x = $('.input').val()
+                x++
+                if(x<=1)
+                {
+                    x=1
+                }
+                $('.input').val(x)
+              })
+              $('.b1').click(function(){
+                let x = $('.input').val()
+                if(x >1){
+                 x--
+                }
+                if(x<=1)
+                {
+                    x=1
+                }
+                $('.input').val(x)
+              })
+             $('.b2').click( function(){
+                  let a = $('.input').val() 
+                  let c =parseInt($('.ha2').html())
+                  let y= a* c
+                  $('.total').val(y)
+              })
+              $('.b1').click( function(){
+      
+                  let a = $('.input').val() 
+                  let c =parseInt($('.ha2').html())
+                  if(a<=1){
+                      $('.total').val(c)
+                  }
+                  else{
+                  let y= $('.total').val()-c
+                  $('.total').val(y)
+                  }
+              })
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

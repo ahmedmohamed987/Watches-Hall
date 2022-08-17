@@ -1,0 +1,165 @@
+
+.row{
+    margin-bottom: 50px;
+}
+#but1{
+    background-color:#87CEFA ;
+    position: absolute;
+    left: 56.4%;
+    top: 55%;
+    border: 2px solid #87CEFA;
+    transition: 0.7s ease-in-out;
+   }
+   #but1:hover{
+   color: white;
+   background-color:#292929 ;
+    position: absolute;
+    left: 56.4%;
+    top: 55%;
+    border: 2px solid #292929;
+    cursor: pointer;
+   }
+   #but2{
+    background-color:#87CEFA ;
+    position: absolute;
+   left: 70.5%;
+   top: 55%;
+   border: 2px solid #87CEFA;
+   transition: 0.7s ease-in-out;
+   }
+   #but2:hover{
+    color: white;
+   background-color:#292929 ;
+   position: absolute;
+   left: 70.5%;
+   top: 55%;
+   border: 2px solid #292929;
+   cursor: pointer;
+   }
+   #text{
+   position: absolute;
+   top: 55%;
+   left:58%;
+   }
+   #but3{
+   background-color:#87CEFA;
+   position: absolute;
+   left: 65%;
+   top: 70%;
+   width: 200px;
+   height: 50px;
+   transform: translateX(-50%);
+   border: 2px solid #87CEFA;
+   border-radius: 5px;
+   font-size: 16px;
+   text-align: center;
+   transition: 0.7s ease-in-out;
+   
+   
+   }
+   #but3:hover{
+    color: white;
+   background-color:#292929;
+   position: absolute;
+   left: 65%;
+   top: 70%;
+   transform: translateX(-50%);
+   border: 2px solid #292929;
+   border-radius: 5px;
+   cursor: pointer;
+
+   
+   }
+   #totalcost{
+   
+   position: absolute;
+   left: 51%;
+   top: 59.5%;
+   
+   }
+   
+   #inputcos{
+    position: absolute;
+    left: 58%;
+    top:63%;
+   }
+
+.footer
+{
+    position: relative;
+    top:180px;
+    height: 300px;
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14;
+	padding: 60px 0 20px; 
+}
+.footer a{
+    text-decoration: none;
+    color:#8a8a8a ;
+}
+.footer p
+{
+	color: #8a8a8a;
+	font-size: 14px;
+}
+.footer h3
+{
+	color: #fff;
+	margin-bottom: 20px; 
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4
+{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1
+{
+	flex-basis: 30%;
+}
+.footer-col-2 
+{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2 img
+{
+	width: 125px;
+	margin-bottom: 20px
+}
+.footer-col-3, .footer-col-4
+{
+	flex-basis: 12%;
+	text-align: center;
+}
+.footer-col-3 li:hover{
+    color:  #ff523b;
+    cursor: pointer;
+}
+ul
+{
+	list-style: none;
+}
+.footer-col-4 a:hover
+{
+	color:  #ff523b;
+}
+.app-logo
+{
+	margin-top: 20px;
+}
+.app-logo img
+{
+	width: 140px;
+}
+.ha1,.ha2{
+    display: inline;
+}
+.ha2{
+    color: #ff523b;
+}
+.qnt{
+    position: relative;
+    top:3%;
+    left: 0%;
+}
